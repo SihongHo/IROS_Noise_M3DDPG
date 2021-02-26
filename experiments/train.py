@@ -13,6 +13,7 @@ sys.path.append('../../../')
 import maddpg.common.tf_util as U
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import tensorflow.contrib.layers as layers
+from scipy.stats import truncnorm  
 
 def parse_args():
     parser = argparse.ArgumentParser("Reinforcement Learning experiments for multiagent environments")
@@ -45,6 +46,9 @@ def parse_args():
     parser.add_argument("--benchmark-iters", type=int, default=100000, help="number of iterations run for benchmarking")
     parser.add_argument("--benchmark-dir", type=str, default="./benchmark_files/", help="directory where benchmark data is saved")
     parser.add_argument("--plots-dir", type=str, default="./learning_curves/", help="directory where plot data is saved")
+    # Uncertainty 
+    parser.add_argument("--uncertainty-type", type=int, default=0, help="type can be: 0-none, 1-reward, 2-action, 3-observation")
+    parser.add_argument('--uncertainty-std', type=float, default=1.0, help='{0.0, 1.0, 2.0, 3.0, ...}, uncertainty level')
     return parser.parse_args()
 
 def mlp_model(input, num_outputs, scope, reuse=False, num_units=64, rnn_cell=None):
@@ -89,6 +93,11 @@ def get_trainers(env, num_adversaries, obs_shape_n, arglist):
             policy_name == 'ddpg', policy_name, policy_name == 'mmmaddpg'))
     return trainers
 
+def truncated_normal(mean = 0.0, std = 1.0, threshold = 1.0):
+    lower, upper = -threshold, threshold
+    mu, sigma = mean, std
+    X = truncnorm((lower - mu) / sigma, (upper - mu) / sigma, loc=mu, scale=sigma)
+    return X
 
 def train(arglist):
     if arglist.test:
@@ -135,6 +144,16 @@ def train(arglist):
         train_step = 0
         t_start = time.time()
 
+        # verify uncertainty type
+        if arglist.uncertainty_type not in [0,1,2,3]:
+            raise Exception('Uncertainty type should be in 0,1,2,3. Your input is {}'.format(arglist.uncertainty_type)) 
+        u_type = ["None", "Reward", "Action", "Observation"]
+        print("Uncertainty type is: ", u_type[arglist.uncertainty_type], "; Uncertainty level is: ", arglist.uncertainty_std)
+
+        _noise_type = arglist.uncertainty_type
+        _noise_std = arglist.uncertainty_std
+        X = truncated_normal(std = _noise_std)
+
         print('Starting iterations...')
         while True:
             # get action
@@ -145,8 +164,20 @@ def train(arglist):
             done = all(done_n)
             terminal = (episode_step >= arglist.max_episode_len)
             # collect experience
+            # to-do: add noise
             for i, agent in enumerate(trainers):
-                agent.experience(obs_n[i], action_n[i], rew_n[i], new_obs_n[i], done_n[i], terminal)
+                ex_obs_n = obs_n[i]
+                ex_action_n = action_n[i]
+                ex_reward = rew_n[i]
+                if _noise_type == 1:#reward
+                    ex_reward = ex_reward + X.rvs(1)[0]
+                elif _noise_type == 2:#action..
+                    temp = [act + X.rvs(1)[0] for act in ex_action_n]
+                    ex_action_n = temp
+                elif _noise_type == 3:#observation
+                    temp = [obs + X.rvs(1)[0] for obs in ex_obs_n]
+                    ex_obs_n = temp
+                agent.experience(ex_obs_n, ex_action_n, ex_reward, new_obs_n[i], done_n[i], terminal)
             obs_n = new_obs_n
 
             for i, rew in enumerate(rew_n):
