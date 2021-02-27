@@ -26,7 +26,7 @@ For Multi-Agent Particle Environments (MPE) installation, please refer to https:
 - `--good-policy`: algorithm used for the 'good' (non adversary) policies in the environment
 (default: `"maddpg"`; options: {`"mmmaddpg"`, `"maddpg"`, `"ddpg"`})
 
-- `--adv-policy`: algorithm used for the adversary policies in the environment
+- `--bad-policy`: algorithm used for the adversary policies in the environment
 (default: `"maddpg"`; options: {`"mmmaddpg"`, `"maddpg"`, `"ddpg"`})
 
 #### Core training parameters
