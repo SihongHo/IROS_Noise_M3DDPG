@@ -38,7 +38,7 @@ def parse_args():
     parser.add_argument("--load-name", type=str, default="", help="name of which training state and model are loaded, leave blank to load seperately")
     parser.add_argument("--load-good", type=str, default="", help="which good policy to load")
     parser.add_argument("--load-bad", type=str, default="", help="which bad policy to load")
-    parser.add_argument("--gpu-frac", type=float, default=0.3, help="Fraction of GPU memory usage.")
+    parser.add_argument("--gpu-frac", type=float, default=0.32, help="Fraction of GPU memory usage.")
     # Evaluation
     parser.add_argument("--test", action="store_true", default=False)
     parser.add_argument("--restore", action="store_true", default=False)
