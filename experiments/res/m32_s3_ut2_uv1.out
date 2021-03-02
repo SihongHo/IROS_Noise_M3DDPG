@@ -1,0 +1,70 @@
+0 bad agents
+      adv rate for q_index :  0 [1e-05, 0.001]
+      adv rate for p_index :  0 [1e-05, 0.001]
+1 good agents
+      adv rate for q_index :  1 [0.001, 1e-05]
+      adv rate for p_index :  1 [0.001, 1e-05]
+Using good policy mmmaddpg and bad policy mmmaddpg with 1 adversaries
+Uncertainty type is:  Action ; Uncertainty level is:  1.0
+Starting iterations...
+mmmaddpg vs mmmaddpg steps: 24975, episodes: 1000, mean episode reward: -25.493354838735073, agent episode reward: [2.5040312061445102, -27.997386044879583], time: 51.582
+mmmaddpg vs mmmaddpg steps: 49975, episodes: 2000, mean episode reward: -22.099949372500166, agent episode reward: [-2.434876165503893, -19.66507320699627], time: 63.997
+mmmaddpg vs mmmaddpg steps: 74975, episodes: 3000, mean episode reward: -13.23567355698007, agent episode reward: [-5.348843438463334, -7.886830118516735], time: 63.388
+mmmaddpg vs mmmaddpg steps: 99975, episodes: 4000, mean episode reward: -11.15880396387923, agent episode reward: [-3.922866499938573, -7.235937463940656], time: 63.338
+mmmaddpg vs mmmaddpg steps: 124975, episodes: 5000, mean episode reward: -10.666783195051783, agent episode reward: [-3.3806351581705196, -7.286148036881263], time: 64.463
+mmmaddpg vs mmmaddpg steps: 149975, episodes: 6000, mean episode reward: -10.909258238329166, agent episode reward: [-3.4945072703623747, -7.414750967966792], time: 63.811
+mmmaddpg vs mmmaddpg steps: 174975, episodes: 7000, mean episode reward: -10.403016240414146, agent episode reward: [-2.6966747494218715, -7.706341490992274], time: 62.666
+mmmaddpg vs mmmaddpg steps: 199975, episodes: 8000, mean episode reward: -10.422784592386563, agent episode reward: [-2.6388618355021096, -7.783922756884452], time: 65.044
+mmmaddpg vs mmmaddpg steps: 224975, episodes: 9000, mean episode reward: -9.983778339056343, agent episode reward: [-2.4034631563012, -7.580315182755144], time: 63.614
+mmmaddpg vs mmmaddpg steps: 249975, episodes: 10000, mean episode reward: -10.779901886983957, agent episode reward: [-2.769023255640707, -8.010878631343248], time: 64.437
+mmmaddpg vs mmmaddpg steps: 274975, episodes: 11000, mean episode reward: -10.173523009085745, agent episode reward: [-2.504201901378143, -7.669321107707602], time: 64.078
+mmmaddpg vs mmmaddpg steps: 299975, episodes: 12000, mean episode reward: -10.128199492177252, agent episode reward: [-2.423328102068035, -7.7048713901092185], time: 63.484
+mmmaddpg vs mmmaddpg steps: 324975, episodes: 13000, mean episode reward: -10.238134954119374, agent episode reward: [-2.144854005405173, -8.093280948714202], time: 63.644
+mmmaddpg vs mmmaddpg steps: 349975, episodes: 14000, mean episode reward: -9.874044004789964, agent episode reward: [-2.320238457729622, -7.5538055470603425], time: 64.388
+mmmaddpg vs mmmaddpg steps: 374975, episodes: 15000, mean episode reward: -9.952280642643851, agent episode reward: [-2.4077149686598163, -7.544565673984036], time: 63.293
+mmmaddpg vs mmmaddpg steps: 399975, episodes: 16000, mean episode reward: -10.020201499423552, agent episode reward: [-2.1574382733321946, -7.862763226091358], time: 63.074
+mmmaddpg vs mmmaddpg steps: 424975, episodes: 17000, mean episode reward: -9.743041481964788, agent episode reward: [-1.6863395588165542, -8.056701923148234], time: 63.824
+mmmaddpg vs mmmaddpg steps: 449975, episodes: 18000, mean episode reward: -9.874984795945464, agent episode reward: [-1.6428522005674815, -8.232132595377982], time: 64.245
+mmmaddpg vs mmmaddpg steps: 474975, episodes: 19000, mean episode reward: -9.844434584645938, agent episode reward: [-1.9002419806588682, -7.9441926039870685], time: 64.25
+mmmaddpg vs mmmaddpg steps: 499975, episodes: 20000, mean episode reward: -9.3588101865407, agent episode reward: [-1.5501163414270336, -7.808693845113666], time: 64.795
+mmmaddpg vs mmmaddpg steps: 524975, episodes: 21000, mean episode reward: -9.966484292010504, agent episode reward: [-1.9245664689312705, -8.041917823079235], time: 66.203
+mmmaddpg vs mmmaddpg steps: 549975, episodes: 22000, mean episode reward: -9.485582987288904, agent episode reward: [-1.0728053399419137, -8.412777647346989], time: 67.336
+mmmaddpg vs mmmaddpg steps: 574975, episodes: 23000, mean episode reward: -9.921795472469169, agent episode reward: [-1.2343966720750341, -8.687398800394137], time: 68.322
+mmmaddpg vs mmmaddpg steps: 599975, episodes: 24000, mean episode reward: -9.7979986034102, agent episode reward: [-1.6411457206170033, -8.1568528827932], time: 68.648
+mmmaddpg vs mmmaddpg steps: 624975, episodes: 25000, mean episode reward: -9.859445068264137, agent episode reward: [-1.232469862802544, -8.626975205461592], time: 68.586
+mmmaddpg vs mmmaddpg steps: 649975, episodes: 26000, mean episode reward: -9.453662744016821, agent episode reward: [-0.8070492086242712, -8.646613535392548], time: 68.344
+mmmaddpg vs mmmaddpg steps: 674975, episodes: 27000, mean episode reward: -9.741456470195299, agent episode reward: [-1.3377865430738667, -8.403669927121431], time: 68.65
+mmmaddpg vs mmmaddpg steps: 699975, episodes: 28000, mean episode reward: -9.569709893352508, agent episode reward: [-1.1449005564130326, -8.424809336939477], time: 68.507
+mmmaddpg vs mmmaddpg steps: 724975, episodes: 29000, mean episode reward: -9.693205865171446, agent episode reward: [-1.4846023694172819, -8.208603495754167], time: 68.882
+mmmaddpg vs mmmaddpg steps: 749975, episodes: 30000, mean episode reward: -9.481099492759327, agent episode reward: [-1.2998590919290383, -8.18124040083029], time: 68.431
+mmmaddpg vs mmmaddpg steps: 774975, episodes: 31000, mean episode reward: -9.921420697850827, agent episode reward: [-1.9610302046984223, -7.960390493152403], time: 68.53
+mmmaddpg vs mmmaddpg steps: 799975, episodes: 32000, mean episode reward: -9.433593296081016, agent episode reward: [-1.1028401854068344, -8.33075311067418], time: 68.37
+mmmaddpg vs mmmaddpg steps: 824975, episodes: 33000, mean episode reward: -9.875083006016606, agent episode reward: [-1.4898878542642093, -8.385195151752395], time: 68.143
+mmmaddpg vs mmmaddpg steps: 849975, episodes: 34000, mean episode reward: -9.876343447125608, agent episode reward: [-1.8741264294493176, -8.00221701767629], time: 68.265
+mmmaddpg vs mmmaddpg steps: 874975, episodes: 35000, mean episode reward: -9.335541741370761, agent episode reward: [-1.4635667753457755, -7.871974966024986], time: 68.231
+mmmaddpg vs mmmaddpg steps: 899975, episodes: 36000, mean episode reward: -9.940278826375842, agent episode reward: [-2.0648684832561988, -7.8754103431196425], time: 68.089
+mmmaddpg vs mmmaddpg steps: 924975, episodes: 37000, mean episode reward: -9.430925020509443, agent episode reward: [-1.3860212672724177, -8.044903753237026], time: 68.924
+mmmaddpg vs mmmaddpg steps: 949975, episodes: 38000, mean episode reward: -9.548350535233403, agent episode reward: [-1.8673688398753407, -7.680981695358063], time: 68.485
+mmmaddpg vs mmmaddpg steps: 974975, episodes: 39000, mean episode reward: -10.051628102928387, agent episode reward: [-1.8216633605456305, -8.229964742382757], time: 67.62
+mmmaddpg vs mmmaddpg steps: 999975, episodes: 40000, mean episode reward: -9.721175473564008, agent episode reward: [-1.4475614850040524, -8.273613988559955], time: 68.06
+mmmaddpg vs mmmaddpg steps: 1024975, episodes: 41000, mean episode reward: -10.003138732782357, agent episode reward: [-1.0321359278110904, -8.971002804971265], time: 68.026
+mmmaddpg vs mmmaddpg steps: 1049975, episodes: 42000, mean episode reward: -10.159265295405184, agent episode reward: [-0.83629906237816, -9.322966233027024], time: 68.068
+mmmaddpg vs mmmaddpg steps: 1074975, episodes: 43000, mean episode reward: -9.889507200352611, agent episode reward: [-0.45414755512493626, -9.435359645227674], time: 68.068
+mmmaddpg vs mmmaddpg steps: 1099975, episodes: 44000, mean episode reward: -9.649777694915816, agent episode reward: [-0.40369291122894674, -9.24608478368687], time: 68.225
+mmmaddpg vs mmmaddpg steps: 1124975, episodes: 45000, mean episode reward: -9.81931333352799, agent episode reward: [-0.27238350120989685, -9.546929832318096], time: 68.238
+mmmaddpg vs mmmaddpg steps: 1149975, episodes: 46000, mean episode reward: -9.75049268199007, agent episode reward: [-0.7481816073136338, -9.002311074676435], time: 68.98
+mmmaddpg vs mmmaddpg steps: 1174975, episodes: 47000, mean episode reward: -9.622778641474364, agent episode reward: [-1.556826843125245, -8.06595179834912], time: 68.026
+mmmaddpg vs mmmaddpg steps: 1199975, episodes: 48000, mean episode reward: -9.862447087965807, agent episode reward: [-1.8666663207279566, -7.995780767237851], time: 68.116
+mmmaddpg vs mmmaddpg steps: 1224975, episodes: 49000, mean episode reward: -10.047455798779398, agent episode reward: [-1.9912726356543227, -8.056183163125073], time: 68.306
+mmmaddpg vs mmmaddpg steps: 1249975, episodes: 50000, mean episode reward: -10.140464593255253, agent episode reward: [-1.9661500609561666, -8.174314532299086], time: 68.308
+mmmaddpg vs mmmaddpg steps: 1274975, episodes: 51000, mean episode reward: -10.179637316434478, agent episode reward: [-1.7339987284645118, -8.445638587969967], time: 68.421
+mmmaddpg vs mmmaddpg steps: 1299975, episodes: 52000, mean episode reward: -10.454484705009726, agent episode reward: [-2.3484049932786757, -8.106079711731049], time: 68.289
+mmmaddpg vs mmmaddpg steps: 1324975, episodes: 53000, mean episode reward: -10.378485554878576, agent episode reward: [-2.631273591951501, -7.747211962927077], time: 67.495
+mmmaddpg vs mmmaddpg steps: 1349975, episodes: 54000, mean episode reward: -10.823840564698973, agent episode reward: [-3.0089221407984317, -7.81491842390054], time: 60.968
+mmmaddpg vs mmmaddpg steps: 1374975, episodes: 55000, mean episode reward: -10.380100487501856, agent episode reward: [-2.680651708953577, -7.69944877854828], time: 57.941
+mmmaddpg vs mmmaddpg steps: 1399975, episodes: 56000, mean episode reward: -10.444990323121223, agent episode reward: [-2.8166759954462868, -7.628314327674936], time: 58.093
+mmmaddpg vs mmmaddpg steps: 1424975, episodes: 57000, mean episode reward: -10.308996962819936, agent episode reward: [-3.0868669182522184, -7.2221300445677175], time: 58.89
+mmmaddpg vs mmmaddpg steps: 1449975, episodes: 58000, mean episode reward: -10.825823685319039, agent episode reward: [-3.3415260726552996, -7.484297612663739], time: 57.796
+mmmaddpg vs mmmaddpg steps: 1474975, episodes: 59000, mean episode reward: -10.483187270701528, agent episode reward: [-2.690520220602845, -7.792667050098684], time: 57.757
+mmmaddpg vs mmmaddpg steps: 1499975, episodes: 60000, mean episode reward: -10.450874388542749, agent episode reward: [-2.3926433043546775, -8.05823108418807], time: 57.261
+...Finished total of 60001 episodes.

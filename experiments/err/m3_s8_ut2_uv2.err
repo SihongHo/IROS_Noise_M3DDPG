@@ -1,0 +1,14 @@
+nohup: ignoring input
+2021-03-01 00:35:31.039036: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-03-01 00:35:31.144811: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: Quadro RTX 6000 major: 7 minor: 5 memoryClockRate(GHz): 1.77
+pciBusID: 0000:01:00.0
+totalMemory: 23.65GiB freeMemory: 3.12GiB
+2021-03-01 00:35:31.144842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2021-03-01 00:35:31.336231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-01 00:35:31.336277: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2021-03-01 00:35:31.336282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2021-03-01 00:35:31.336378: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3874 MB memory) -> physical GPU (device: 0, name: Quadro RTX 6000, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-03-01 00:35:31.337602: E tensorflow/stream_executor/cuda/cuda_driver.cc:903] failed to allocate 3.78G (4063074560 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2021-03-01 00:35:31.338487: E tensorflow/stream_executor/cuda/cuda_driver.cc:903] failed to allocate 3.41G (3656766976 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2021-03-01 00:35:31.339431: E tensorflow/stream_executor/cuda/cuda_driver.cc:903] failed to allocate 3.06G (3291090176 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
